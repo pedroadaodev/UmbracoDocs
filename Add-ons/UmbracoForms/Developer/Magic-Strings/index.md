@@ -16,6 +16,11 @@ Umbraco Forms has some magic strings that enable you to render values from vario
 ## Parsing Umbraco Form field items
 `{myAliasForFormField}` this allows you to display the entered value for that specific field from the form submission. Used in workflows to send an automated email back to the customer based on the email address submitted in the form.
 
+## Dictionary items
+`#myDictionaryValue` this allows you to display the dictionary value for that specific field from the form submission.
+In the dictionary create a new entry `myDictionaryValue` (without the #). 
+Note: When using the dictionary, don't add more text. ex: `#myDictionaryValue And My Other Text`
+
 ## Parsing Member properties from a form submission
 `{member.FOO}` with the prefix of member. in the same syntax above will allow you to retrieve information about the submission if it was submitted by a logged in member.
 
